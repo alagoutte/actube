@@ -17,7 +17,7 @@ addons:
     - libgmp-dev   
 #    - libgnutls-dev
     - libconfuse-dev
-    - lua
+    - liblua5.2-dev
 before_install:
   - $CC --version
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
