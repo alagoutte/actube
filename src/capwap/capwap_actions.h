@@ -191,6 +191,4 @@
 	CW_ITEM_MAXIMUM_MESSAGE_LENGTH,			/* ID to use store */		\
 	2, 2						/* min/max length */
 
-
-
 #endif

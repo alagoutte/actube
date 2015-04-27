@@ -31,4 +31,7 @@
 			"radio_type":"4"
 		}
 	}
+
+	"fortinet_MGMT_VLAN_TAG":"23",
+
 }

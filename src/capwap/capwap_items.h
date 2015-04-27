@@ -61,6 +61,13 @@
 
 	CW_ITEM_AC_IMAGE_DIR,	
 	CW_ITEM_IMAGE_FILENAME,
+	/* Other Items */
+	CW_ITEM_AC_IMAGE_DIR,		/* Path where WTP images are stored */
+	CW_ITEM_IMAGE_FILENAME,		/* Full path of image filename */
+
+        /* Fortinet */
+        CW_ITEM_FORTINET_MGMT_VLAN_TAG,
+
 	CW_ITEM_DISCOVERIES,
 	
 	CW_ITEM_IMAGE_FILEHANDLE,	
@@ -71,7 +78,6 @@
 	CW_ITEM_CISCO_BOARD_DATA_OPTIONS,
 	CW_ITEM_RADIOS,
 	CW_ITEM_RADIO_OPER_STATE,
-	
 
 */
 

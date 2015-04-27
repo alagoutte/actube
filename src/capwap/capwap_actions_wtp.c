@@ -230,7 +230,11 @@ cw_action_out_t capwap_actions_wtp_out[] = {
 	{CW_MSG_DISCOVERY_REQUEST, CW_ITEM_WTP_DESCRIPTOR, 0, 
 	 CW_ELEM_WTP_DESCRIPTOR, NULL,cw_out_wtp_descriptor, NULL,1}
 	,
-	
+	/* Fortinet VLAN.. */
+	{CW_MSG_DISCOVERY_REQUEST, CW_ITEM_FORTINET_MGMT_VLAN_TAG, CW_VENDOR_ID_FORTINET,
+	161, NULL, cw_out_generic, cw_out_get_config, 2}
+        ,
+
 
 	/* -------------------------------------------------------------------------------
 	 * Join Request OUT
