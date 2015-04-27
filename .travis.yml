@@ -17,6 +17,7 @@ addons:
     - libgmp-dev   
 #    - libgnutls-dev
     - libconfuse-dev
+    - lua5.2
     - liblua5.2-dev
 before_install:
   - $CC --version
