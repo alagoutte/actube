@@ -531,8 +531,6 @@ extern int cw_readelem_vendor_specific_payload(void *data, int msgtype, int elem
 #define CW_VENDOR_ID_LANCOM	2356
 #define CW_VENDOR_ID_FORTINET	12356
 
-
-
 #define CW_RESULT_SUCCESS					0
 #define CW_RESULT_MISSING_AC_LIST				1
 #define CW_RESULT_SUCCESS_NAT					2
