@@ -67,6 +67,7 @@
 
         /* Fortinet */
         CW_ITEM_FORTINET_MGMT_VLAN_TAG,
+        CW_ITEM_FORTINET_WTP_CAP,
 
 	CW_ITEM_DISCOVERIES,
 	

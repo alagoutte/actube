@@ -58,5 +58,6 @@
 	}
 
 	"fortinet_MGMT_VLAN_TAG":"23",
+	"fortinet_wtp_cap":".x000101de000000000000000000000000000000",
 
 }
