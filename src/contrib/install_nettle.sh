@@ -11,7 +11,7 @@ then
 wget https://ftp.gnu.org/gnu/nettle/nettle-${VERSION}.tar.gz
 fi
 
-tar xvf  nettle-${VERSION}.tar.xz
+tar xvf  nettle-${VERSION}.tar.gz
 cd nettle-${VERSION}
 ./configure
 make
