@@ -15,7 +15,7 @@ addons:
     - autotools-dev
     - libtool
     - libgmp-dev   
-#    - libgnutls-dev
+    - libgnutls28-dev
     - libconfuse-dev
     - lua5.1
     - liblua5.1-0-dev
