@@ -26,7 +26,7 @@ before_install:
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
   - $CC --version
   - $CXX --version
-  - sudo apt-get install libgnutls28-dev libnl-genl-3-dev
+  - sudo apt-get install libgnutls28-dev libnl-genl-3-dev libnl-3-dev
 before_script:
   - cd src/contrib
   - ./install_nettle.sh
