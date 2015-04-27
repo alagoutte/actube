@@ -15,18 +15,18 @@ addons:
     - autotools-dev
     - libtool
     - libgmp-dev   
-    - libgnutls28-dev
+#    - libgnutls28-dev
     - libconfuse-dev
     - lua5.1
     - liblua5.1-0-dev
-    - libnl-3-dev
-    - libnl-genl-3-dev
+#    - libnl-3-dev
+#    - libnl-genl-3-dev
 before_install:
   - $CC --version
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
   - $CC --version
   - $CXX --version
-#  - sudo apt-get install nettle-dev
+  - sudo apt-get install libgnutls28-dev libnl-genl-3-dev
 before_script:
   - cd src/contrib
   - ./install_nettle.sh
