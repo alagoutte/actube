@@ -19,6 +19,8 @@ addons:
     - libconfuse-dev
     - lua5.1
     - liblua5.1-0-dev
+#    - libnl-3-dev
+    - libnl-genl-3-dev
 before_install:
   - $CC --version
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
@@ -40,4 +42,4 @@ script:
   - cd ..
   - cd ac
   - make
-  - ./actube 
+#  - ./actube 
