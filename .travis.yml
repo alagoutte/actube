@@ -19,7 +19,7 @@ addons:
     - libconfuse-dev
     - lua5.1
     - liblua5.1-0-dev
-#    - libnl-3-dev
+    - libnl-3-dev
     - libnl-genl-3-dev
 before_install:
   - $CC --version
