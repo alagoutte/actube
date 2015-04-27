@@ -27,7 +27,7 @@ before_install:
 before_script:
   - cd src/contrib
   - ./install_nettle.sh
-  - ./install_gnutls.sh
+  - CC=gcc CXX=g++ ./install_gnutls.sh
   - ./install_libuci.sh
   - cd ..
 script:
