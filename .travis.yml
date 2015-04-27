@@ -29,8 +29,8 @@ before_install:
   - sudo apt-get install libgnutls28-dev libnl-genl-3-dev libnl-3-dev
 before_script:
   - cd src/contrib
-  - ./install_nettle.sh
-  - CC=gcc CXX=g++ ./install_gnutls.sh
+#  - ./install_nettle.sh
+#  - CC=gcc CXX=g++ ./install_gnutls.sh
   - ./install_libuci.sh
   - cd ..
 script:
