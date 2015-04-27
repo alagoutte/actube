@@ -13,7 +13,7 @@ fi
 
 tar xvf  nettle-${VERSION}.tar.gz
 cd nettle-${VERSION}
-./configure
+./configure --with-gmp
 make
 sudo make install
 
