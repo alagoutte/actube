@@ -17,10 +17,12 @@ addons:
     - libgmp-dev   
 #    - libgnutls-dev
     - libconfuse-dev
+    - lua
 before_install:
   - $CC --version
   - if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
   - $CC --version
+  - $CXX --version
 #  - sudo apt-get install nettle-dev
 before_script:
   - cd src/contrib
