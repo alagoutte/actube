@@ -13,8 +13,8 @@ fi
 
 tar xvf  gnutls-${VERSION}.tar.xz
 cd gnutls-${VERSION}
-./configure --enable-dynamic --enable-static --prefix=$HOME/usr --exec-prefix=$HOME/usr
+./configure
 make
-make install
+sudo make install
 
 
