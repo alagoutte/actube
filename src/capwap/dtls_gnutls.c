@@ -117,7 +117,7 @@ struct dtls_gnutls_data *dtls_gnutls_data_create(struct conn *conn,int config)
 
 
 	int bits;
-	bits = gnutls_sec_param_to_pk_bits(GNUTLS_PK_DH, GNUTLS_SEC_PARAM_INSECURE);
+	bits = gnutls_sec_param_to_pk_bits(GNUTLS_PK_DH, GNUTLS_SEC_PARAM_EXPORT);
         /* Generate Diffie-Hellman parameters - for use with DHE
          * kx algorithms. When short bit length is used, it might
          * be wise to regenerate parameters often.
