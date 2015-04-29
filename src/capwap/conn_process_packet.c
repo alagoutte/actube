@@ -54,7 +54,7 @@ void cw_init_response(struct conn *conn, uint8_t * req)
 	memcpy(buffer, req, shbytes);
 
 
-	cw_set_hdr_rmac(buffer,conn->base_rmac);
+	cw_set_hdr_rmac(buffer, NULL);
 //	cw_set_hdr_hlen(buffer, 2);
 //	cw_set_hdr_flags(buffer, CW_FLAG_HDR_M, 1);
 
