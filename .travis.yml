@@ -33,6 +33,9 @@ before_script:
 #  - CC=gcc CXX=g++ ./install_gnutls.sh
   - ./install_libuci.sh
   - cd ..
+  - cd jsmn
+  - make
+  - cd ..
 script:
   - cd capwap
   - make
