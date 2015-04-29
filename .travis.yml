@@ -32,9 +32,9 @@ before_script:
 #  - ./install_nettle.sh
 #  - CC=gcc CXX=g++ ./install_gnutls.sh
   - ./install_libuci.sh
-  - cd ..
   - cd jsmn
   - make
+  - cd ..
   - cd ..
 script:
   - cd capwap
