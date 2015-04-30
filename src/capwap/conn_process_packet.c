@@ -81,7 +81,8 @@ void cw_init_request(struct conn *conn, int msg_id)
 	/* unencrypted */
 	cw_set_hdr_preamble(buffer, CAPWAP_VERSION << 4 | 0);
 	
-	cw_set_hdr_rmac(buffer,conn->base_rmac);
+	cw_set_hdr_rmac(buffer, conn->base_rmac);
+//	cw_set_hdr_rmac(buffer, NULL);
 	//cw_set_hdr_hlen(buffer, 2);
 
 
