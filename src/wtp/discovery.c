@@ -231,6 +231,7 @@ int discovery()
 {
 	struct conn *conn = get_conn();
 	cw_run_discovery(conn, "255.255.255.255");
+	cw_run_discovery(conn, "10.44.23.52");
 	conn->capwap_state=CW_STATE_JOIN;
 	return 1;
 }
