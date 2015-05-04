@@ -93,6 +93,8 @@ const char CW_ITEM_RADIO_INFOS[]="radio_infos";
 
 //const char CW_ITEM_XY[]="wtp_name";
 
+const char CW_ITEM_FORTINET_MGMT_VLAN_TAG[]= "fortinet_mgmt_vlan_tag";
+const char CW_ITEM_FORTINET_WTP_CAP[]= "fortinet_wtp_cap";
 
 struct cw_itemdef capwap_itemdefs[] = {
 
