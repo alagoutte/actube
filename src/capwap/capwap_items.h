@@ -61,13 +61,7 @@
 
 	CW_ITEM_AC_IMAGE_DIR,	
 	CW_ITEM_IMAGE_FILENAME,
-	/* Other Items */
-	CW_ITEM_AC_IMAGE_DIR,		/* Path where WTP images are stored */
-	CW_ITEM_IMAGE_FILENAME,		/* Full path of image filename */
 
-        /* Fortinet */
-        CW_ITEM_FORTINET_MGMT_VLAN_TAG,
-        CW_ITEM_FORTINET_WTP_CAP,
 
 	CW_ITEM_DISCOVERIES,
 	
@@ -179,6 +173,9 @@ extern const char CW_ITEM_WTP_MAX_RADIOS[];
 extern const char CW_ITEM_RADIO_INFOS[];
 
 
+/* Fortinet */
+extern const char CW_ITEM_FORTINET_MGMT_VLAN_TAG[];
+extern const char CW_ITEM_FORTINET_WTP_CAP[];
 
 
 
