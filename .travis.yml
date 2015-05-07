@@ -37,12 +37,12 @@ before_script:
   - cd ..
 script:
   - cd capwap
-  - make
+  - make -k
   - cd ..
   - cd wtp
-  - make
+  - make -k
   - ./wtp &
   - cd ..
   - cd ac
-  - make
+  - make -k
   - ./actube &
