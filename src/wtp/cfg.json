@@ -15,8 +15,8 @@
 		"serial_no":"FP221C3X14004444",
 		"vendor_id":"12356",
 		"wtp_board_id":"220-1",
-		"wtp_board_revision":"0",
-		"wtp_board_macaddress":".x085b0e663344"
+		"wtp_board_macaddress":".x085b0e663344",
+		"wtp_board_revision":"0"
 	},
 	"wtp_frame_tunnel_mode":"4",
 	"wtp_group_name":"tobias",
@@ -24,6 +24,8 @@
 	"wtp_mac_type":"1",
 	"wtp_name":"Kaffe-Point",
 	"wtp_software_version":"0,FP221C-v5.0-build449",
+	"wtp_boot_version":"0,.x3034303030303032",
+	"wtp_other_version":"0,FP221C-v5.0-build449",
 	"radios":{
 		"1":{
 			"admin_state":"1",
