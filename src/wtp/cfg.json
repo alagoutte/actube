@@ -13,7 +13,10 @@
 	"wtp_board_data":{
 		"model_no":"FP221C",
 		"serial_no":"FP221C3X14004444",
-		"vendor_id":"12356"
+		"vendor_id":"12356",
+		"wtp_board_id":"220-1",
+		"wtp_board_revison":"0",
+		"wtp_board_macaddress":".x085b0e663344"
 	},
 	"wtp_frame_tunnel_mode":"4",
 	"wtp_group_name":"tobias",
