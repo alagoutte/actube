@@ -18,7 +18,7 @@
 
 #include <stdlib.h>
 #include <string.h>
-
+#include <stdio.h>
 #include <net/if.h>
 #include <ifaddrs.h>
 
@@ -39,6 +39,15 @@ char * sock_get_primary_if(int family)
 
 		if (ifa->ifa_addr == NULL)
 			continue;
+		int family;
+                family = ifa->ifa_addr->sa_family;
+               printf("%-8s %s (%d)\n",
+                      ifa->ifa_name,
+                      (family == AF_PACKET) ? "AF_PACKET" :
+                      (family == AF_INET) ? "AF_INET" :
+                      (family == AF_INET6) ? "AF_INET6" : "???",
+                      family);
+
 
 		if (ifa->ifa_addr->sa_family != family)
 			continue;

@@ -17,10 +17,15 @@ int sock_getifhwaddr(const char *ifname, uint8_t * hwaddr, uint8_t * addrlen)
 {
 	struct sockaddr_storage sa;
 	uint8_t *src;
+	printf("%s", ifname);
 
 #ifdef AF_PACKET	
-	if (!sock_getifaddr(ifname,AF_PACKET,0,(struct sockaddr*)&sa))
+	printf("packet");
+	if (!sock_getifaddr(ifname,AF_PACKET,0,(struct sockaddr*)&sa)){
+		printf("error");
 		return 0;
+}
+
 	*addrlen = ((struct sockaddr_ll*)&sa)->sll_halen;
 	src = ((struct sockaddr_ll*)&sa)->sll_addr;
 #endif

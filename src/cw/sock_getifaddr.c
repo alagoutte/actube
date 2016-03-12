@@ -21,6 +21,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <net/if.h>
+#include <stdio.h>
 #include <ifaddrs.h>
 
 #include "sock.h"
@@ -28,25 +29,31 @@
 int sock_getifaddr(const char * ifname,int family, int type,struct sockaddr * sa)
 {
         struct ifaddrs *ifap,*ifa;
+	printf("Getif start");
         
 	if ( getifaddrs(&ifap)==-1)
 		return 0;
+		printf("Getif getifaddrs)");
 
 	int rc=0;
         for (ifa = ifap; ifa != NULL; ifa = ifa->ifa_next) {
+		printf("strcmp %s %s\n", ifname, ifa->ifa_name);
 		if (strcmp(ifname,ifa->ifa_name))
 			continue;
+		printf("ifa_addr null");
 
 		if (ifa->ifa_addr == NULL)
 			continue;
-
+		printf("ifa_addr familly %d %d\n",ifa->ifa_addr->sa_family, family);
 		if (ifa->ifa_addr->sa_family != family)
 			continue;
+
+		printf("Getif addr before type)");
 
 		if (type != 0)
 			if (!(ifa->ifa_flags & type))
 				continue;
-
+		printf("Getif addr before switch)");
 		switch (type){
 			case 0:
 				memcpy (sa, ifa->ifa_addr, sock_addrlen(ifa->ifa_addr));
