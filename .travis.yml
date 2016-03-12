@@ -36,7 +36,10 @@ before_script:
   - cd ..
   - cd ..
 script:
-  - cd capwap
+  - cd cw
+  - make
+  - cd ..
+  - cd mod
   - make
   - cd ..
   - cd wtp
