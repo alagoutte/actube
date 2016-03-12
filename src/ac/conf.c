@@ -361,10 +361,10 @@ static int init_listen_addrs()
 	/* count the addresses */
 	int ctr = 0;
 	for (ifa = ifap; ifa != 0; ifa = ifa->ifa_next) {
-		if (ifa->ifa_addr->sa_family == AF_INET && conf_ipv4)
+		if (ifa->ifa_addr && ifa->ifa_addr->sa_family == AF_INET && conf_ipv4)
 			ctr++;
 #ifdef WITH_IPV6
-		if (ifa->ifa_addr->sa_family == AF_INET6 && conf_ipv6)
+		if (ifa->ifa_addr && ifa->ifa_addr->sa_family == AF_INET6 && conf_ipv6)
 			ctr++;
 #endif
 	}
@@ -389,7 +389,7 @@ static int init_listen_addrs()
 			}
 		}
 
-		if (ifa->ifa_addr->sa_family == AF_INET && conf_ipv4) {
+		if (ifa->ifa_addr && ifa->ifa_addr->sa_family == AF_INET && conf_ipv4) {
 			sock_addrtostr(ifa->ifa_addr, str, 100,0);
 //			printf("The converter has %s\n",str);
 //			*strchr(str, ':') = 0;
@@ -400,7 +400,7 @@ static int init_listen_addrs()
 				ctr++;
 
 		}
-		if (ifa->ifa_addr->sa_family == AF_INET6 && conf_ipv6) {
+		if (ifa->ifa_addr && ifa->ifa_addr->sa_family == AF_INET6 && conf_ipv6) {
 			sock_addrtostr(ifa->ifa_addr, str, 100,0);
 
 			if (strncmp(str, "fe80:", 5) == 0) {
@@ -492,7 +492,7 @@ int init_bcast_addrs()
 
 
 		sa = ifa->ifa_addr;
-		if (sa->sa_family != AF_INET)
+		if (sa && sa->sa_family != AF_INET)
 			continue;
 
 		char str[100];

@@ -21,7 +21,7 @@ int sock_getifhwaddr(const char *ifname, uint8_t * hwaddr, uint8_t * addrlen)
 
 #ifdef AF_PACKET	
 	printf("packet");
-	if (!sock_getifaddr(ifname,AF_PACKET,0,(struct sockaddr*)&sa)){
+	if (!sock_getifaddr(ifname,AF_INET,0,(struct sockaddr*)&sa)){
 		printf("error");
 		return 0;
 }
