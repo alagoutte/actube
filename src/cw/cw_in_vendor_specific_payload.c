@@ -3,6 +3,7 @@
 #include "dbg.h"
 #include "log.h"
 
+#include "stravltree.h"
 /** 
  * @file 
  * @brief Implementation of Vendor Specific Payload
