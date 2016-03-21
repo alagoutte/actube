@@ -99,7 +99,7 @@ int ac_global_init()
 				 bstr_data(conf_software_version), bstr_len(conf_software_version));
 
 
-	mbag_set_str(ac_config,CW_ITEM_AC_IMAGE_DIR,conf_image_dir);
+	//mbag_set_str(ac_config,CW_ITEM_AC_IMAGE_DIR,conf_image_dir);
 
 //	mbag_set_avltree(ac_config, CW_ITEM_AC_IP_LIST, aciplist);
 
