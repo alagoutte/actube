@@ -200,7 +200,7 @@ static struct cw_actiondef *load_mods(struct conn *conn, uint8_t * rawmsg, int l
 	struct mod_ac *bmod =
 	    detect_mod(conn, rawmsg, len, elems_len, from, MOD_MODE_BINDINGS);
 
-	cw_dbg(DBG_INFO, "Mods deteced: %s,%s", cmod->name, bmod->name);
+	cw_dbg(DBG_INFO, "Mods detected: %s,%s", cmod->name, bmod->name);
 
 	struct cw_actiondef *ad = mod_cache_add(cmod, bmod);
 
