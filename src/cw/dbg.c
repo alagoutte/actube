@@ -245,7 +245,7 @@ int cw_format_pkt_hdr(char *dst,int level,struct conn *conn, uint8_t * packet, i
 	s+=sprintf(s," H:%d R:%02d W:%02d",hlen,rid,wbid);
 
 
-	s+=sprintf(s," Flgs:");
+	s+=sprintf(s," Flags:");
 	s+=format_hdr_flags(s,packet);
 
 	if (len<8)
