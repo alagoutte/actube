@@ -29,6 +29,7 @@
 
 #include "mod_fortinet.h"
 #include "fortinet.h"
+#include "fortinet_item.h"
 
 static cw_action_in_t actions_in[] = {
 
@@ -176,6 +177,16 @@ static cw_action_out_t actions_out[]={
 	/* --------------------------------------------------------
 	 * Discovery Response 
 	 */
+
+        {
+                .msg_id = CW_MSG_DISCOVERY_RESPONSE,
+                .item_id = "fortinet_out_wtp_allow",
+                .vendor_id = CW_VENDOR_ID_FORTINET,
+                .elem_id  = CW_ITEM_FORTINET_WTP_ALLOW,
+                .out = fortinet_out_wtp_allow,
+                .mand = 1
+        }
+        ,
 
 #if 0
 	/* Cisco AP Timesync - Discovery Request

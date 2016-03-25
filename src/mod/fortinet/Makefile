@@ -4,6 +4,7 @@ OBJS=\
 	mod_fortinet_wtp.o \
 	fortinet_actions_ac.o \
 	fortinet_actions_wtp.o \
+	fortinet_out_wtp_allow.o \
 #	cisco_out_ap_timesync.o \
 #	cisco_in_wtp_descriptor.o \
 #	cisco_out_ac_descriptor.o \
